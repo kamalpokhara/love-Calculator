@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#fff5f7" />
+    <title>Love Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Six+Caps&family=Jost:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Love Calculator</h1>
+      <p class="sub">Made with love for love.</p>
+
+      <form id="f" novalidate>
+        <div class="row">
+          <div><label for="a">Your name</label><input id="a" autocomplete="off" autocapitalize="words" /></div>
+          <div><label for="b">Their name</label><input id="b" autocomplete="off" autocapitalize="words" /></div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="s1">Your sign</label
+            ><select id="s1"></select>
+          </div>
+          <div>
+            <label for="s2">Their sign</label
+            ><select id="s2"></select>
+          </div>
+        </div>
+        <p class="hint">Pick both signs for the zodiac score. Skip either and you get FLAMES.</p>
+        <p class="err" id="err" role="alert"></p>
+        <button class="go" type="submit">Calculate</button>
+      </form>
+
+      <section id="res" hidden aria-live="polite"></section>
+      <p class="note">For entertainment only. The stars are not a relationship counsellor.</p>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
